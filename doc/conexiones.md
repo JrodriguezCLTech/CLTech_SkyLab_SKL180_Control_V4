@@ -1,0 +1,68 @@
+# :hammer:Conexiones SKL-180
+
+## Entradas
+- **Sensores CNC:**
+  - Sensor final de carrera eje X
+    - Tipo: Módulo final de carrera óptico TCST-1203
+    - Significado: [1] Se llegó a Home en eje X, [0] Eje X no está en Home
+  - Sensor final de carrera eje Y
+    - Tipo: Módulo final de carrera óptico TCST-1203
+    - Significado: [1] Se llegó a Home en eje Y, [0] Eje Y no está en Home
+- **Sensores Bandejas:**
+  - Sensor final de carrera linea 1
+    - Tipo: Módulo final de carrera óptico TCST-1203
+    - Significado: [1] Se llegó a linea 1 en eje X, [0] Eje X no está en linea 1
+  - Sensor final de carrera linea 2
+    - Tipo: Módulo final de carrera óptico TCST-1203
+    - Significado: [1] Se llegó a linea 2 en eje X, [0] Eje X no está en linea 2
+  - Sensor final de carrera linea 3
+    - Tipo: Módulo final de carrera óptico TCST-1203
+    - Significado: [1] Se llegó a linea 3 en eje X, [0] Eje X no está en linea 3
+  - Sensor final de carrera linea 4
+    - Tipo: Módulo final de carrera óptico TCST-1203
+    - Significado: [1] Se llegó a linea 4 en eje X, [0] Eje X no está en linea 4
+  - Sensor tubos suficientes linea 1
+    - Tipo: [Módulo sensor óptico infrarrojo F233-013](https://www.vistronica.com/sensores/modulo-sensor-infrarrojo-de-cuatro-canales-detail.html?product_rewrite=modulo-sensor-infrarrojo-de-cuatro-canales)
+    - Significado: [0] Hay tubos suficientes en linea 1, [1] No hay tubos suficientes en linea 1
+  - Sensor tubos suficientes linea 2
+    - Tipo: [Módulo sensor óptico infrarrojo F233-013](https://www.vistronica.com/sensores/modulo-sensor-infrarrojo-de-cuatro-canales-detail.html?product_rewrite=modulo-sensor-infrarrojo-de-cuatro-canales)
+    - Significado: [0] Hay tubos suficientes en linea 2, [1] No hay tubos suficientes en linea 2
+  - Sensor tubos suficientes linea 3
+    - Tipo: [Módulo sensor óptico infrarrojo F233-013](https://www.vistronica.com/sensores/modulo-sensor-infrarrojo-de-cuatro-canales-detail.html?product_rewrite=modulo-sensor-infrarrojo-de-cuatro-canales)
+    - Significado: [0] Hay tubos suficientes en linea 3, [1] No hay tubos suficientes en linea 3
+  - Sensor tubos suficientes linea 4
+    - Tipo: [Módulo sensor óptico infrarrojo F233-013](https://www.vistronica.com/sensores/modulo-sensor-infrarrojo-de-cuatro-canales-detail.html?product_rewrite=modulo-sensor-infrarrojo-de-cuatro-canales)
+    - Significado: [0] Hay tubos suficientes en linea 4, [1] No hay tubos suficientes en linea 4
+- **Sensores sistema rotulación:**
+  - Sensor tubo (parte superior)
+    - Tipo: Módulo Óptico Reflexivo Infrarrojo TCRT5000
+    - Significado: [1] Se detecta la tapa de tubo en sistema rotulación, [0] No se detecta la tapa de tubo en sistema rotulación
+  - Sensor rotulacion 1 (parte inferior)
+    - Tipo: Módulo Óptico Reflexivo Infrarrojo CNY-90
+    - Significado: [1] Se detecta etiqueta en zona 1 inferior sistema rotulación, [0] No se detecta etiqueta en zona 1 inferior sistema rotulación
+  - Sensor rotulacion 2 (parte inferior)
+    - Tipo: Módulo Óptico Reflexivo Infrarrojo CNY-90
+    - Significado: [1] Se detecta etiqueta en zona 2 inferior sistema rotulación, [0] No se detecta etiqueta en zona 2 inferior sistema rotulación
+  - Sensor lector código de barra:
+    - Tipo: CCD Barcode Scanner DF3100
+
+## Salidas:
+- **Actuadores sistema CNC:**
+  - 2 Motores paso a paso:
+    - Tipo: Nema 17
+    - Función: Dar movilidad al gripper en ejes X, Y
+- **Actuadores sistema gripper:**
+  - 2 Vacuum pump:
+    - Tipo: Vacuum pump AJK-B12V2705
+    - Función: Suministrar/succionar aire comprimido para el sistema del gripper
+  - 1 Air valve:
+    - Tipo: Air valve AJK-F0512
+    - Función: Derivar el aire comprimido para abrir o cerrar el mecanismo del gripper
+- **Actuadores sistema rotulación:**
+  - 1 Servomotor:
+    - Tipo: Servomotor DS3218MG
+    - Función: Apretar/liberar tubo en el sistema de rotulación
+  - 1 Motorreductor:
+    - Tipo: Motorreductor DC 24V
+    - Función: Girar tubo en sistema de rotulación (cuando servo está apretando)
+
