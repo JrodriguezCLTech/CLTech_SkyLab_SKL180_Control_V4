@@ -290,7 +290,7 @@ void Rutinas::RecogerTubo(String VLinea)
                     }
                 }    
             }
-            delay(3-000);
+            delay(3000);
 
             lecturaSensoresAux.deteccionSensores();
             if(lecturaSensoresAux.varIOTSensores[9] == 1){
